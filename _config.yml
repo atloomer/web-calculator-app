@@ -1,0 +1,57 @@
+# Site wide configuration
+
+title:            Alex Loomer
+locale:           fr_fr
+url:              https://atloomer.github.io
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Célya Gruson-Daniel
+  avatar: photoCGD.jpg
+  bio: "Research Engineer, PhD Student : Open science, Open Education, MOOC, HackYourPhD and Yoga."
+  email: 
+  disqus-shortname: 
+  twitter: celyagd
+  facebook: c.grusondaniel
+  google:
+    plus: 
+    analytics: 
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: celyagd
+  stackoverflow: 
+  linkedin: celyagrusondaniel
+  instagram: 
+  lastfm: 
+  tumblr: yogeekons
+  pinterest: 
+  foursquare: 
+  steam: 
+  dribbble: 
+  youtube: 
+  soundcloud: hackyourphd
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
