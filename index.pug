@@ -1,0 +1,30 @@
+html(ng-app="priceApp")
+  body
+    .nav-bar
+      a(href="https://experiencepeak.com")
+        img(src="https://static1.squarespace.com/static/5a76adc1ace864dda3a02b54/t/5a81110e652deaf3401341e1/1521821335831/?format=1500w")
+    div.content
+      h1 
+      form(name="cart", ng-controller="CartCtrl")
+        div.category(ng-repeat="category in categories")
+          h2 {{ category.name }}
+          div.product(ng-repeat="product in category.products")
+            .question
+              h5 {{ product.questionNumber }}
+              h3 {{ product.name }}
+            h4 {{ product.subName }}
+            table
+              tbody
+                tr(ng-repeat="item in product.options")
+                  td
+                    input(type="radio", name="{{ product.name }}", ng-model="product.selected", ng-change="update()", value="{{ item.price }}")
+                    span.radio-new
+                  td {{ item.name }}
+                  td {{ item.description }}
+                  td.price ${{ item.price }}
+                  
+
+        .total
+          p #[strong Total] ${{ total }}
+        .bottom.total
+          p #[strong Total] ${{ total }}
