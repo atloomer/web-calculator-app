@@ -11,7 +11,7 @@ myApp.controller('CartCtrl', ['$scope', function($scope) {
           options: [
             {name: "Yes", price: 300, selected: false},
             {name: "No", price: 325, selected: false}
-          ] 
+          ]
         },
         {
           questionNumber: "2/7",
@@ -20,7 +20,7 @@ myApp.controller('CartCtrl', ['$scope', function($scope) {
             {name: "1 - 2", price: 50, selected: false},
             {name: "3 - 6", price: 100, selected: false},
             {name: "7 plus", price: 300, selected: false}
-          ] 
+          ]
         },
         {
           questionNumber: "3/7",
@@ -28,8 +28,8 @@ myApp.controller('CartCtrl', ['$scope', function($scope) {
           options: [
             {name: "None", price: 0, selected: false},
             {name: "A small amount", price: 50, selected: false},
-            {name: "All of it", price: 200, selected: false}
-          ] 
+            {name: "All of it", price: 150, selected: false}
+          ]
         },
         {
           questionNumber: "4/7",
@@ -39,7 +39,7 @@ myApp.controller('CartCtrl', ['$scope', function($scope) {
             {name: "1", price: 70, selected: false},
             {name: "2", price: 140, selected: false},
             {name: "3 or more", price: 250, selected: false}
-          ] 
+          ]
         },
         {
           questionNumber: "5/7",
@@ -48,7 +48,7 @@ myApp.controller('CartCtrl', ['$scope', function($scope) {
           options: [
             {name: "Yes", price: 200, selected: false},
             {name: "No", price: 0, selected: false}
-          ] 
+          ]
         },
         {
           questionNumber: "6/7",
@@ -56,7 +56,7 @@ myApp.controller('CartCtrl', ['$scope', function($scope) {
           options: [
             {name: "Yes", price: 500, selected: false},
             {name: "No", price: 0, selected: false}
-          ] 
+          ]
         },
         {
           questionNumber: "7/7",
@@ -65,7 +65,7 @@ myApp.controller('CartCtrl', ['$scope', function($scope) {
             {name: "No, I have my own images", price: 0, selected: false},
             {name: "Yes, stock images will do", price: 50, selected: false},
             {name: "Yes, I would like to you to take photos for me", price: 200, selected: false}
-          ] 
+          ]
         }
       ]
     },
@@ -82,7 +82,7 @@ myApp.controller('CartCtrl', ['$scope', function($scope) {
       for (prod in categories[cat].products) {
         tempOption = categories[cat].products[prod].selected;
         console.log(tempOption);
-        total += tempOption ? parseFloat(tempOption) : 0; 
+        total += tempOption ? parseFloat(tempOption) : 0;
       }
     }
 
